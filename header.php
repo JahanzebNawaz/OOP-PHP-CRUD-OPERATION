@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,6 +44,13 @@
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="view.php">VIEW</a>
+	      </li>
+	      
+	    </ul>
+	    <!-- logout -->
+	    <ul class="navbar-nav">
+	    	<li class="nav-item justify-content-end">
+	        <a class="nav-link btn btn-danger" href="logout.php">Logout</a>
 	      </li>
 	    </ul>
 	  </div> 

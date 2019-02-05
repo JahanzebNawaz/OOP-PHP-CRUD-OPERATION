@@ -6,11 +6,11 @@ session_start();
 
 if(isset($_SESSION['login']))
 {
-    //echo '<script>window.location.replace("index.php")</script>';
+    echo '<script>window.location.replace("index.php")</script>';
 }
 
-
 $error="";
+
 if(isset($_POST['login']))
 {
     include_once 'con.php';

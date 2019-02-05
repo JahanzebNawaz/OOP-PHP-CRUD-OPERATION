@@ -1,5 +1,11 @@
 <?php include_once 'header.php' ?>
-
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+	# code...
+	echo '<script>window.location.replace("login.php") </script>';
+}
+?>
 <div class="row">
 	<div class="col">
 		<div class="w-50 mx-auto p-3 bg-lights">

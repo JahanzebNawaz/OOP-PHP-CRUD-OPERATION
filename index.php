@@ -1,19 +1,11 @@
 <?php include_once 'header.php'; ?>
-
 <?php
 session_start();
-if (isset($_SESSION['login'])) {
+if (!isset($_SESSION['login'])) {
 	# code...
 	echo '<script>window.location.replace("login.php") </script>';
 }
-
-if (isset($_SESSION['logout'])) {
-	# code...
-	echo '<script>window.location.replace("login.php") </script>';
-}
-
- ?>
- 
+?>
 <div class="row">
 	<div class="col">
 		<div class="w-75 mx-auto p-3 bg-lights">
